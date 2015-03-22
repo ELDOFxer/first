@@ -11,4 +11,12 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', function()
+{
+	return view('filon.first');
+});
+
+Route::get('/filon', function()
+{
+	return view('filon.test');
+});
